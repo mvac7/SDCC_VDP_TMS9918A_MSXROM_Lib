@@ -1,0 +1,2 @@
+sdasz80 -o VDP_TMS9918A_ROM.rel VDP_TMS9918A_ROM.s
+pause
