@@ -29,7 +29,7 @@ It uses the functions from the MSX BIOS, so it is designed to create application
   
 Use them for developing MSX applications using Small Device C Compiler (SDCC) compilator.
 
-Include an application for test and learning purposes.
+Includes an application for test and learning purposes.
 
 
 
