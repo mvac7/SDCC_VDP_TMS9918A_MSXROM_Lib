@@ -164,12 +164,14 @@ void main(void)
 /* =============================================================================
 One character input (waiting)
 ============================================================================= */
-char INKEY(){
+char INKEY() __naked
+{
 __asm 
   
   call CHGET
   ld   L,A
 
+  ret
 __endasm;
 }
 
@@ -215,7 +217,7 @@ void WAIT(uint cicles)
 
 
 
-char PEEK(uint address)
+char PEEK(uint address) __naked
 {
 address;
 __asm
@@ -230,6 +232,7 @@ __asm
   ld   L,A
 
   pop  IX
+  ret
 __endasm;
 }
 

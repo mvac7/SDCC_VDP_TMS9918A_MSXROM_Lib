@@ -1,6 +1,6 @@
 /* =============================================================================
-  SDCC MSX ROM VDP TMS9918A Functions Library (object type)
-  Version: 1.2
+  VDP TMS9918A MSX ROM SDCC Library (fR3eL Project)
+
   Author: mvac7 [mvac7303b@gmail.com]
   Architecture: MSX
   Format: C Object (SDCC .rel)

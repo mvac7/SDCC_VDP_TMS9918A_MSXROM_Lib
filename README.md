@@ -14,10 +14,16 @@ Programming language: C and Z80 assembler
 Open Source library with basic functions to work with the TMS9918A video processor.
 
 It uses the functions from the MSX BIOS, so it is designed to create applications in ROM format.
-  
-Use them for developing MSX applications using Small Device C Compiler (SDCC) compilator.
+
+Use them for developing MSX applications using [Small Device C Compiler (SDCC)](http://sdcc.sourceforge.net/) cross compiler.
 
 The source code includes an application to test or learn how to use the library.
+
+If you need specific functions to manage Sprites, you can use any of the following libraries:
+- [SPRITES Small](https://github.com/mvac7/SDCC_VDP_SPRITES_S_MSXROM_Lib) - Basic functions for managing Sprites. It is more compact so it takes up less space in our application.
+- [SPRITES](https://github.com/mvac7/SDCC_VDP_SPRITES_MSXROM_Lib) - It includes the same functions as the Small version and adds to access specific parameters (positioning, color, pattern, visibility and EarlyClock).
+- [SPRITE 1/2](https://github.com/mvac7/SDCC_VDP_SPRITES_12_MSXROM_Lib) - Same as SPRITES but in the G3 screen mode (V9938), it treats the color parameters in a simplified way. Assign the color parameters and EarlyClock to all the lines of the Sprites.
+- SPRITE DUMP (In development) - Uses a buffer in RAM that has to be dumped in each interruption. Includes a Sprite Flicker, to allow viewing up to 8 sprites per line.
 
 This library is part of the [MSX fR3eL Project](https://github.com/mvac7/SDCC_MSX_fR3eL).
 
@@ -27,7 +33,8 @@ Enjoy it!
 
 ## History of versions
 
-* v1.1 (14/02/2014) current version
+* v1.2 (22/12/2020) Conversion to source in C and added Sprite initialization functions.
+* v1.1 (14/02/2014)
 * v1.0 (?)
 
 
@@ -65,6 +72,8 @@ I want to give a special thanks to all those who freely share their knowledge wi
 ## Functions
 
 * void **SCREEN**(char) - Sets the display mode of the screen.
+* void **SetSpritesSize**(char size) - Set size type for the sprites.
+* void **SetSpritesZoom**(boolean zoom) - Set zoom type for the sprites.
 * void **COLOR**(char, char, char) - Specifies the ink, foreground and background colors.
 * void **VPOKE**(unsigned int, char) - Writes a byte to the video RAM.
 * char **VPEEK**(unsigned int) - Reads data from the video RAM.
