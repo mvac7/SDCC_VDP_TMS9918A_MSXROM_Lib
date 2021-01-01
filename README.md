@@ -17,7 +17,7 @@ It uses the functions from the MSX BIOS, so it is designed to create application
 
 Use them for developing MSX applications using [Small Device C Compiler (SDCC)](http://sdcc.sourceforge.net/) cross compiler.
 
-The source code includes an application to test or learn how to use the library.
+In the source code (\examples), you can find applications for testing and learning purposes.
 
 If you need specific functions to manage Sprites, you can use any of the following libraries:
 - [SPRITES Small](https://github.com/mvac7/SDCC_VDP_SPRITES_S_MSXROM_Lib) - Basic functions for managing Sprites. It is more compact so it takes up less space in our application.
@@ -35,7 +35,7 @@ Enjoy it!
 
 * v1.2 (22/12/2020) Conversion to source in C and added Sprite initialization functions.
 * v1.1 (14/02/2014)
-* v1.0 (?)
+* v1.0 (11/02/2014)
 
 
 

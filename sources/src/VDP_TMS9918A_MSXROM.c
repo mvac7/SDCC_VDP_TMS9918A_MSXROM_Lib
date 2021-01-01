@@ -14,7 +14,7 @@
     v1.2 (22/12/2020) Conversion to source in C and added Sprite initialization 
                       functions.
     v1.1 (14/02/2014) 
-    v1.0 ?                             
+    v1.0 (11/02/2014)                             
 ============================================================================= */ 
 
 #include "../include/msxSystemVars.h"

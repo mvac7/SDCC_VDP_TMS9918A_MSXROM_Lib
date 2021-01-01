@@ -1,5 +1,8 @@
 /* =============================================================================
   VDP TMS9918A MSX SDCC Library (fR3eL Project)
+
+  Description:
+    Open Source library of functions to work with the TMS9918A video processor 
 ============================================================================= */
 #ifndef  __VDP_TMS9918A_H__
 #define  __VDP_TMS9918A_H__
