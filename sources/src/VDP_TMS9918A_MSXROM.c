@@ -19,7 +19,8 @@
 
 #include "../include/msxSystemVars.h"
 #include "../include/msxBIOS.h"
-#include "../include/VDP_TMS9918A.h"
+
+#include "../include/VDP_TMS9918A_MSXROM.h"
 
 
 

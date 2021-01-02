@@ -1,5 +1,5 @@
 /* =============================================================================
-   Test VDP_TMS9918A
+   Test VDP TMS9918A MSX ROM SDCC Lib
    v1.2 (13/04/2018)
    Description:
     test SDCC TMS9918A MSX ROM Lib (VDP_TMS9918A)
@@ -10,7 +10,7 @@
 #include "../include/msxBIOS.h"
 #include "../include/msxSystemVars.h"
 
-#include "../include/VDP_TMS9918A.h"
+#include "../include/VDP_TMS9918A_MSXROM.h"
 
 
 

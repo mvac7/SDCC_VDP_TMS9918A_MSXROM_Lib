@@ -25,6 +25,8 @@ If you need specific functions to manage Sprites, you can use any of the followi
 - [SPRITE 1/2](https://github.com/mvac7/SDCC_VDP_SPRITES_12_MSXROM_Lib) - Same as SPRITES but in the G3 screen mode (V9938), it treats the color parameters in a simplified way. Assign the color parameters and EarlyClock to all the lines of the Sprites.
 - SPRITE DUMP (In development) - Uses a buffer in RAM that has to be dumped in each interruption. Includes a Sprite Flicker, to allow viewing up to 8 sprites per line.
 
+You also have the [VDP PRINT MSX SDCC Library](https://github.com/mvac7/SDCC_VDP_PRINT_Lib), with functions for display text strings in the graphic modes of the TMS9918A (G1 and G2).
+
 This library is part of the [MSX fR3eL Project](https://github.com/mvac7/SDCC_MSX_fR3eL).
 
 Enjoy it!
