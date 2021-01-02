@@ -22,8 +22,8 @@ In the source code (\examples), you can find applications for testing and learni
 If you need specific functions to manage Sprites, you can use any of the following libraries:
 - [SPRITES Small](https://github.com/mvac7/SDCC_VDP_SPRITES_S_MSXROM_Lib) - Basic functions for managing Sprites. It is more compact so it takes up less space in our application.
 - [SPRITES](https://github.com/mvac7/SDCC_VDP_SPRITES_MSXROM_Lib) - It includes the same functions as the Small version and adds to access specific parameters (positioning, color, pattern, visibility and EarlyClock).
-- [SPRITE 1/2](https://github.com/mvac7/SDCC_VDP_SPRITES_12_MSXROM_Lib) - Same as SPRITES but in the G3 screen mode (V9938), it treats the color parameters in a simplified way. Assign the color parameters and EarlyClock to all the lines of the Sprites.
-- SPRITE DUMP (In development) - Uses a buffer in RAM that has to be dumped in each interruption. Includes a Sprite Flicker, to allow viewing up to 8 sprites per line.
+- [SPRITES 1/2](https://github.com/mvac7/SDCC_VDP_SPRITES_12_MSXROM_Lib) - Same as SPRITES but in the G3 screen mode (V9938), it treats the color parameters in a simplified way. Assign the color parameters and EarlyClock to all the lines of the Sprites.
+- SPRITES DUMP (In development) - Uses a buffer in RAM that has to be dumped in each interruption. Includes a Sprite Flicker, to allow viewing up to 8 sprites per line.
 
 You also have the [VDP PRINT MSX SDCC Library](https://github.com/mvac7/SDCC_VDP_PRINT_Lib), with functions for display text strings in the graphic modes of the TMS9918A (G1 and G2).
 
@@ -62,7 +62,7 @@ I want to give a special thanks to all those who freely share their knowledge wi
 * Fernando García > [youTube](https://www.youtube.com/user/bitvision)
 * Eric Boez > [gitHub](https://github.com/ericb59)
 * MSX Assembly Page > [WEB](http://map.grauw.nl/resources/msxbios.php)
-* Portar MSX Tech Doc > [WEB](http://nocash.emubase.de/portar.htm)
+* Portar MSX Tech Doc > [WEB](https://problemkaputt.de/portar.htm)
 * MSX Resource Center > [WEB](http://www.msx.org/)
 * Karoshi MSX Community (RIP 2007-2020)
 * BlueMSX emulator >> [WEB](http://www.bluemsx.com/)
@@ -83,3 +83,13 @@ I want to give a special thanks to all those who freely share their knowledge wi
 * void **CopyToVRAM**(unsigned int, unsigned int, unsigned int) - Block transfer from memory to VRAM.
 * void **CopyFromVRAM**(unsigned int, unsigned int, unsigned int) - Block transfer from VRAM to memory.
 * void **SetVDP**(char, char) - Writes a value in VDP registers.
+
+
+## Documentation
+
+* Texas Instruments TMS9918A application manual [(PDF)](http://map.grauw.nl/resources/video/texasinstruments_tms9918.pdf)
+* Texas Instruments VDP Programmer’s Guide [(PDF)](http://map.grauw.nl/resources/video/ti-vdp-programmers-guide.pdf)
+* Texas Instruments TMS9918A VDP by Sean Young [(TXT)](http://bifi.msxnet.org/msxnet/tech/tms9918a.txt)
+* 9938 Technical Data Book [(PDF)](http://map.grauw.nl/resources/video/yamaha_v9938.pdf) [(TXT)](http://map.grauw.nl/resources/video/v9938/v9938.xhtml)
+* 9958 Technical Data Book [(PDF)](http://map.grauw.nl/resources/video/yamaha_v9958_ocr.pdf)
+* Portar Doc Video Display Processor [WEB](https://problemkaputt.de/portar.htm#videodisplayprocessor)
